@@ -63,6 +63,17 @@
     .feeling-grid{
         grid-template-columns:repeat(2,1fr);
     }
+    .story-wrapper{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .story-content h2{
+        font-size: 4.6rem;
+    }
+    .story-stats{
+        gap: 3rem;
+    }
+
      .footer-top{
         flex-direction:column;
         gap:5rem;
@@ -103,6 +114,22 @@
     }
      .feeling-grid{
         grid-template-columns:1fr;
+    }
+    .story-sec{
+        padding: 6rem 0;
+    }
+    .story-content h2{
+        font-size: 3.6rem;
+    }
+    .story-content p{
+        font-size: 1.6rem;
+    }
+    .story-stats{
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    .stat-item{
+        width: calc(50% - 1.25rem);
     }
 
      .footer{
