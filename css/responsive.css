@@ -1,0 +1,119 @@
+@media screen and (max-width:1200px) {
+   .main-header .container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }  
+}
+
+@media screen and (max-width:991px){
+    .main-header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .site-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 35rem;
+        bottom: 0;
+        border-radius: 2rem 0 0 2rem;
+        padding: 4rem;
+        transition: all 0.5s linear;
+        transform: translateX(100%);
+    }
+
+    .toggle .site-nav {
+        transform: translateX(0);
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+    }
+
+    .close-menu {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    .site-nav .close-menu a {
+        font-size: 2rem;
+        width: 4rem;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        border: 1px solid var(--secondary-clr);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-right-btns {
+        margin-left: auto;
+    }
+    .category-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sec-title h2{
+        font-size: 4rem;
+    }
+    .feeling-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+     .footer-top{
+        flex-direction:column;
+        gap:5rem;
+    }
+    .footer-links{
+        grid-template-columns:repeat(2,1fr);
+        gap:4rem;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .category-sec{
+        padding: 6rem 0;
+    }
+    .sec-head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sec-title{
+        width: 100%;
+    }
+    .flex-line{
+        display: none;
+    }
+    .category-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+    .sec-title h2{
+        font-size: 3.2rem;
+    }
+    .category-card h3{
+        font-size: 1.6rem;
+    }
+    .feeling-sec{
+        padding:6rem 0;
+    }
+     .feeling-grid{
+        grid-template-columns:1fr;
+    }
+
+     .footer{
+        padding:5rem 0 2rem;
+    }
+    .footer-links{
+        grid-template-columns:1fr;
+        gap:3rem;
+    }
+    .footer-social{
+        margin-top:2rem;
+    }
+
+}
