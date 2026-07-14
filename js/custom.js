@@ -53,3 +53,68 @@ const sellerSwiper = new Swiper(".sellerSwiper",{
         }
     }
 });
+
+
+const testimonialSwiper = new Swiper(".testimonialSwiper",{
+    slidesPerView:3,
+    spaceBetween:24,
+    speed:700,
+    loop:true,
+    autoplay:{
+        delay:3500,
+        disableOnInteraction:false,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1.15,
+            spaceBetween:16,
+        },
+        576:{
+            slidesPerView:1.6,
+            spaceBetween:18,
+        },
+        768:{
+            slidesPerView:2,
+            spaceBetween:20,
+        },
+        992:{
+            slidesPerView:3,
+            spaceBetween:24,
+        }
+    }
+
+});
+
+const bundleSwiper = new Swiper(".bundleSwiper",{
+ slidesPerView:3.5,
+    spaceBetween:16,
+    speed:500,
+    loop:true,
+     navigation:{
+        nextEl:".bundle-next",
+        prevEl:".bundle-prev",
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1.2,
+            spaceBetween:16,
+        },
+        576:{
+            slidesPerView:2.2,
+            spaceBetween:20,
+        },
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        },
+        992:{
+            slidesPerView:3.5,
+            spaceBetween:20,
+        },
+        1200:{
+            slidesPerView:3.5,
+            spaceBetween:20,
+        }
+    }
+
+});
