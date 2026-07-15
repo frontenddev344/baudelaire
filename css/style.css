@@ -518,7 +518,6 @@ main {
 /* best-seller-sec start  */
 .best-seller-sec {
     padding: 10rem 0 0;
-    overflow: hidden;
 }
 .swiper-nav {
     display: flex;
@@ -985,7 +984,6 @@ main {
 /* bundle-sec start  */
 .bundle-sec{
     padding:10rem 0 0;
-    overflow:hidden;
 }
 
 .bundleSwiper {
