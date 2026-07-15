@@ -21,6 +21,8 @@ $(document).ready(function(){
     
   });
 
+window.addEventListener("load", function () {
+
 const sellerSwiper = new Swiper(".sellerSwiper",{
     slidesPerView:4.5,
     spaceBetween:16,
@@ -116,5 +118,17 @@ const bundleSwiper = new Swiper(".bundleSwiper",{
             spaceBetween:20,
         }
     }
+
+});
+
+const loader = document.querySelector(".loader")
+
+setTimeout(function(){
+    loader.classList.add("hidden")
+}, 2000)
+
+setTimeout(function(){
+    loader.style.display = "none"
+}, 2500)
 
 });
